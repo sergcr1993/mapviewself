@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Littr Map View</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="litterLocations.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="content">
+
+      <!-- Navbar from Bootstrap -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="litter.png" width="30" height="30" alt=""></a>        
+        <a class="navbar-brand" href="#">Litter Map View</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Map View<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">User Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <p class="disclaimer">Finding Litter Locations<br></p>
+
+      <form action="#" method="post">
+        <label for="maxRadius">Find locations within
+          <input name="maxRadius" id="maxRadius" type="number" value="5" min="1" />
+        </label>
+        <label for="userAddress"> miles of
+          <input name="userAddress" id="userAddress" type="text" placeholder="Your Address" value="2500 NW Monroe Ave, Corvallis, OR 97331" />
+        </label>
+        <button id="submitLocationSearch">Search</button>
+      </form>
+
+      <h2 id="location-search-alert">All Litter Locations</h2>
+
+      <div id="locations-near-you-map"></div>
+
+      <div id="locations-near-you"></div>
+
+      <script defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyD5PWnOhc0yrKF-KGXOrhGyQPp22uNuQEw&callback=createSearchableMap"></script>
+      <script src="mapview.js"></script>
+    </div>
+  </body>
+</html> 

@@ -1,0 +1,32 @@
+var allLocations = [
+  {
+    name: "Engineering Center",
+    lat: 44.567256,
+    lng: -123.278689,
+    address: "1148 Kelley Engineering Center",
+    city: "Corvallis",
+    state: "OR",
+    zip: "97331",
+    phone: "(541) 737-3101",
+  },
+  {
+    name: "Xfinity Store by Comcast",
+    lat: 45.534909,
+    lng: -122.869534,
+    address: "1995 NW 185th Ave",
+    city: "Hillsboro",
+    state: "OR",
+    zip: "97124",
+    phone: "(800) 934-6489",
+  },
+  {
+    name: "Voodoo Doughnuts",
+    lat: 45.522636,
+    lng: -122.673165,
+    address: "22 SW 3rd Ave",
+    city: "Portlands",
+    state: "OR",
+    zip: "97204",
+    phone: "(503) 241-4704",
+  },
+];
